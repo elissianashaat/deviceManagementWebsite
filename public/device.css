@@ -1,0 +1,115 @@
+.bod{
+    margin: 0;
+    background-color: black;
+    color: grey;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+}
+
+.rightnav a {
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+}
+
+.rightnav a:hover {
+    color: #4CAF50;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    top: 220px;
+    width: 300px;
+    flex-direction: column;
+    margin: 0 auto; /* Automatically center the container horizontally */
+    font-size: 20px;
+}
+
+label {
+    margin-bottom: 10px; /* Add space below each label */
+}
+
+input,
+select {
+    margin-top: 5px; /* Add space above each input/select */
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 20px; /* Add padding around the text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #4CAF50; /* Set background color */
+    color: white; /* Set text color */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add smooth transition for background color */
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darken background color on hover */
+}
+
+
+.container{
+    margin-top: 70px;
+    width: 100px;
+}
+.mb-8{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.mt-4{
+    background-color: grey !important;
+}
+/* Override Bootstrap card border */
+.card {
+    --bs-card-border-width: 0 !important; /* Set border width to 0 */
+}
+.card-title{
+    color:#45a049 !important;
+} 
+.card-body{
+    background-color: black;
+    color: white !important;
+    outline: none;
+}
+.card-title{
+    color:#4CAF50;
+}
+.container .delete{
+    background-color: red;
+    float: right;
+   
+}

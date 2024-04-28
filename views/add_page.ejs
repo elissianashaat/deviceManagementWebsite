@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs")  %>
+<form class="container" action="/submit" method="POST">
+    <!--device name, type, battery percentage, location-->
+    <label for="devicename">Device Name: </label>
+    <input type="text" id="devicename" name="devicename" placeholder="Device Name">
+    <br>
+    <label for="devicetype">Device Type: </label>
+    <select id="devicetype" name="devicetype">
+        <option value="laptop">Laptop</option>
+        <option value="smartphone">Smart Phone</option>
+        <option value="tablet">Tablet</option>
+        <option value="SmartWatch">Smart Watch</option>
+        <option value="AirPods">Air Pods</option>
+    </select>
+    <br>
+    <label for="location">Enter the location access link: </label>
+    <input type="text" id="location" name="location" placeholder="location">
+    <br>
+    <label for="battery">Enter battery access link: </label>
+    <input type="text" id="battery" name="battery" placeholder="battery">
+    <br>
+    <button type="submit" value="submit" href="/submit" method="POST" >Submit!</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../device.js"></script>
+<script src="/public/index.js"></script>
+</body>
+</html>
+
+<!--hdkhol 3la eldevices available
+1- hsearch 3la eldevice el3yzah by it's name -- lw available hyzhrrli w h5taro -- hyzhrli esm eldevice w it's type bkhat soghyr gmbo
+w it's battery which will be a random number between 0-100 percent and it's location which will be a random location "can do it with any function"
+2- if the user wants to add a new device they will click on add and it will direct them to another page which has a form to enter the new device's
+info and when the user clicks save those info will be saved on the data base
+3- either the button will direct the user to the available devices and he clicks on a remove button next to each device and remove
+or he it will just be available when he searches in avaliable devices and no remove page needed.
+-->
+<%- include("partials/footer.ejs")  %>

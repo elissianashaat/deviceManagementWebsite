@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs")  %>
+<div class="container">
+    <h1 class="mb-8">Devices Available</h1>
+    <% devices.forEach((device, index) => { %>
+        <div class="card mt-4" style="margin-top: 0.2rem !important;">
+            <div class="card-body">
+                <h2 class="card-title">
+                    <%= device.name %>
+                </h2>
+                <div class="card-text mb-2">
+                    <h4>
+                        Battery level : <%= device.battery %> %
+                    </h4>
+                 </div>
+                 <div class="card-text mb-2">
+                    <h4>
+                        Location : <%= device.location %>
+                    </h4>
+                 </div>
+                 <form class="form" action="/delete-article/<%= index %>" method="post" >
+                    <button class="delete" type="submit">Delete</button>
+                </form>
+            </div>
+            <% }); %>
+</div>
+<%- include("partials/footer.ejs")  %>

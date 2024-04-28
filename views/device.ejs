@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+
+<h1 class="header">Search Device</h1>
+<form class="cont" action="/search" method="POST">
+    <input type="search" id="search" name="search" placeholder="enter device name" >
+    <br>
+    <button type="submit" value="submit">Search</button>
+</form>
+
+<%- include("partials/footer.ejs") %>
